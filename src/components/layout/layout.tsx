@@ -20,6 +20,7 @@ export const Layout = () => {
             <li><Link to="/perfil">Mi Perfil</Link></li>
             <li><Link to="/usuarios">Usuarios</Link></li>
             <li><Link to="/viajes">Viajes</Link></li>
+            <li><Link to="/incidencias">Incidencias</Link></li>
             {/* Acá cada integrante agregará el link a su entidad */}
           </ul>
         </nav>
