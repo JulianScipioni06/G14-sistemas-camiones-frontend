@@ -1,0 +1,46 @@
+.incidencias-search-box {
+    min-width: 340px;
+}
+
+.incidencias-id-col {
+    width: 80px;
+    color: var(--text);
+}
+
+.incidencias-fecha-col {
+    width: 170px;
+    white-space: nowrap;
+}
+
+.incidencias-viaje-col {
+    width: 240px;
+}
+
+.form-field-full {
+    grid-column: 1 / -1;
+}
+
+.textarea-field {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: var(--sans);
+    color: var(--text-h);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.textarea-field:focus {
+    border-color: var(--accent);
+}
+
+.textarea-field:read-only {
+    background: var(--code-bg);
+    color: var(--text-h);
+    cursor: default;
+}
