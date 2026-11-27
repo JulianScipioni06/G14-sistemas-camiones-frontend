@@ -1,0 +1,22 @@
+.badge-danger {
+    color: #dc2626;
+    background: rgba(220, 38, 38, 0.12);
+    border-color: rgba(220, 38, 38, 0.35);
+}
+
+.camiones-search-box {
+    min-width: 340px;
+}
+
+.camiones-id-col {
+    width: 75px;
+    color: var(--text);
+}
+
+.camiones-num-col {
+    white-space: nowrap;
+}
+
+.camiones-estado-col {
+    width: 140px;
+}

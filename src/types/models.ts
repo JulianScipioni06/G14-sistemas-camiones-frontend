@@ -35,13 +35,6 @@ export interface Incidencia {
     id_viaje: number;
 }
 
-export interface CamionOption {
-    id_camion: number;
-    patente: string;
-    marca: string;
-    modelo: string;
-}
-
 export interface AcopladoOption {
     id_acoplado: number;
     patente: string;
@@ -59,8 +52,20 @@ export interface ClienteOption {
     razon_social: string;
     cuit: string;
 }
+export interface Camion {
+    id_camion: number;
+    patente: string;
+    marca: string;
+    modelo: string;
+    capacidad: number;
+    tara: number;
+    estado: string;
+    kms_recorridos: number;
+    vencimiento_vtv: string;
+    vencimiento_seguro: string;
 
-export interface Chofer {
+
+}   export interface Chofer {
     id_chofer: number;
     dni: string;
     nombre_completo: string;
