@@ -63,4 +63,15 @@ export interface Camion {
     kms_recorridos: number;
     vencimiento_vtv: string;
     vencimiento_seguro: string;
+
+
+}   export interface Chofer {
+    id_chofer: number;
+    dni: string;
+    nombre_completo: string;
+    telefono: string;
+    domicilio: string;
+    email: string;
+    vencimiento_carnet: string;
+    id_usuario: number;
 }

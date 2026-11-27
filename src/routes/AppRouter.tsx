@@ -11,6 +11,8 @@ import { Incidencias } from '../pages/incidencias';
 import { IncidenciaDetalle } from '../pages/incidenciaDetalle';
 import { Camiones } from '../pages/camiones';
 import { CamionDetalle } from '../pages/camionDetalle';
+import { Choferes } from '../pages/choferes';
+import { ChoferDetalle } from '../pages/choferDetalle';
 
 export const AppRouter = () => {
     return (
@@ -35,6 +37,9 @@ export const AppRouter = () => {
                 <Route path="camiones" element={<Camiones />} />
                 <Route path="camiones/nuevo" element={<CamionDetalle />} />
                 <Route path="camiones/:id" element={<CamionDetalle />} />
+                <Route path="choferes" element={<Choferes />} />
+                <Route path="choferes/nuevo" element={<ChoferDetalle />} />
+                <Route path="/choferes/:id" element={<ChoferDetalle />} />
             </Route>
             </Route>
         </Routes>
