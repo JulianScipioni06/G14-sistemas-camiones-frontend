@@ -23,6 +23,7 @@ export const Layout = () => {
             <li><Link to="/incidencias">Incidencias</Link></li>
             <li><Link to="/camiones">Camiones</Link></li>
             <li><Link to="/choferes">Choferes</Link></li>
+            <li><Link to="/clientes">Clientes</Link></li>
             {/* Acá cada integrante agregará el link a su entidad */}
           </ul>
         </nav>

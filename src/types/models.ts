@@ -52,6 +52,7 @@ export interface ClienteOption {
     razon_social: string;
     cuit: string;
 }
+
 export interface Camion {
     id_camion: number;
     patente: string;
@@ -63,9 +64,9 @@ export interface Camion {
     kms_recorridos: number;
     vencimiento_vtv: string;
     vencimiento_seguro: string;
+}  
 
-
-}   export interface Chofer {
+export interface Chofer {
     id_chofer: number;
     dni: string;
     nombre_completo: string;
@@ -74,4 +75,13 @@ export interface Camion {
     email: string;
     vencimiento_carnet: string;
     id_usuario: number;
+}
+
+export interface Cliente {
+    id_cliente: number;
+    razon_social: string;
+    cuit: string;
+    direccion?: string | null;
+    telefono: string;
+    email?: string | null;
 }
