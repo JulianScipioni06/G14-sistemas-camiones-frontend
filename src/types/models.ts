@@ -59,3 +59,14 @@ export interface ClienteOption {
     razon_social: string;
     cuit: string;
 }
+
+export interface Chofer {
+    id_chofer: number;
+    dni: string;
+    nombre_completo: string;
+    telefono: string;
+    domicilio: string;
+    email: string;
+    vencimiento_carnet: string;
+    id_usuario: number;
+}

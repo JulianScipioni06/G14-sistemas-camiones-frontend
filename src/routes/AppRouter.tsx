@@ -9,6 +9,8 @@ import { Viajes } from '../pages/viajes';
 import { ViajeDetalle } from '../pages/viajeDetalle';
 import { Incidencias } from '../pages/incidencias';
 import { IncidenciaDetalle } from '../pages/incidenciaDetalle';
+import { Choferes } from '../pages/choferes';
+import { ChoferDetalle } from '../pages/choferDetalle';
 
 export const AppRouter = () => {
     return (
@@ -30,6 +32,9 @@ export const AppRouter = () => {
                 <Route path="incidencias" element={<Incidencias />} />
                 <Route path="incidencias/nuevo" element={<IncidenciaDetalle />} />
                 <Route path="incidencias/:id" element={<IncidenciaDetalle />} />
+                <Route path="choferes" element={<Choferes />} />
+                <Route path="choferes/nuevo" element={<ChoferDetalle />} />
+                <Route path="/choferes/:id" element={<ChoferDetalle />} />
             </Route>
             </Route>
         </Routes>
