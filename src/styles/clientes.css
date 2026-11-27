@@ -1,0 +1,13 @@
+.clientes-search-box {
+  min-width: 280px;
+}
+
+.clientes-id-col {
+  width: 72px;
+  white-space: nowrap;
+}
+
+.clientes-cuit-col {
+  width: 150px;
+  white-space: nowrap;
+}
