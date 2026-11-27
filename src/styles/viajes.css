@@ -1,0 +1,16 @@
+.viajes-search-box {
+    min-width: 340px;
+}
+
+.viajes-id-col {
+    width: 75px;
+    color: var(--text);
+}
+
+.viajes-num-col {
+    white-space: nowrap;
+}
+
+.viajes-estado-col {
+    width: 140px;
+}
