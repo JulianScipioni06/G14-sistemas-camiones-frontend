@@ -1,0 +1,12 @@
+.usuarios-search-box {
+    min-width: 320px;
+}
+
+.usuarios-id-col {
+    width: 90px;
+    color: var(--text);
+}
+
+.usuarios-rol-col {
+    width: 180px;
+}
