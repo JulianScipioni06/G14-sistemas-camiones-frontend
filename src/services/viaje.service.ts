@@ -2,7 +2,7 @@ import api from '../api/axios';
 import type {
     ApiResponse,
     Viaje,
-    CamionOption,
+    Camion,
     AcopladoOption,
     ChoferOption,
     ClienteOption,
@@ -47,7 +47,9 @@ export const deleteViaje = async (id: number) => {
 };
 
 export const getCamionesOptions = async () => {
-    const { data } = await api.get<ApiResponse<CamionOption[]>>('/camiones');
+    const { data } = await api.get<ApiResponse<Camion[]>>('/camiones' ,{
+        params: {limit: 100},
+    });
     return data;
 };
 
