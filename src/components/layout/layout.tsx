@@ -1,7 +1,15 @@
 import { Link, Outlet } from 'react-router-dom';
+import { getStoredUser, logoutRequest } from '../../services/auth.service';
 import './Layout.css';
 
 export const Layout = () => {
+  const currentUser = getStoredUser();
+
+  let headerTitle = 'Panel de Gestión';
+  if (currentUser) {
+    headerTitle = `Panel de Gestión · ${currentUser.usuario}`;
+  }
+
   return (
     <div className="app-layout">
       <aside className="sidebar">
@@ -10,6 +18,7 @@ export const Layout = () => {
           <ul>
             <li><Link to="/">Inicio / Dashboard</Link></li>
             <li><Link to="/perfil">Mi Perfil</Link></li>
+            <li><Link to="/usuarios">Usuarios</Link></li>
             {/* Acá cada integrante agregará el link a su entidad */}
           </ul>
         </nav>
@@ -17,8 +26,10 @@ export const Layout = () => {
 
       <div className="main-container">
         <header className="header">
-          <span>Panel de Gestión</span>
-          <Link to="/login">Cerrar sesión</Link>
+          <span>{headerTitle}</span>
+          <Link to="/login" onClick={logoutRequest}>
+            Cerrar sesión
+          </Link>
         </header>
 
         <main className="content">

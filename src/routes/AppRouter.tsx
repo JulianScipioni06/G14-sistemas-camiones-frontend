@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../components/layout/layout';
 import { Home } from '../pages/home';
 import { Login } from '../pages/login';
+import { Usuarios } from '../pages/usuarios';
+import { UsuarioDetalle } from '../pages/usuarioDetalle';
 import { ProtectedRoute } from './ProtectedRoute';
 
 export const AppRouter = () => {
@@ -15,7 +17,9 @@ export const AppRouter = () => {
             <Route element={<ProtectedRoute />}>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                {/* Acá cada integrante agregará las rutas de su entidad */}
+                <Route path="usuarios" element={<Usuarios />} />
+                <Route path="usuarios/nuevo" element={<UsuarioDetalle />} />
+                <Route path="usuarios/:id" element={<UsuarioDetalle />} />
             </Route>
             </Route>
         </Routes>
