@@ -53,6 +53,24 @@ export interface ClienteOption {
     cuit: string;
 }
 
+export interface Ingreso {
+    id_ingreso: number;
+    id_viaje: number | null;
+    id_cliente: number | null;
+    concepto: string;
+    monto: number | string;
+    fecha: string;
+    metodo_pago: string | null;
+    estado: string;
+}
+
+export interface PaginatedResponse<T> {
+    msg: string;
+    code: number;
+    total: number;
+    page: number;
+    limit: number;
+    data: T[];
 export interface Camion {
     id_camion: number;
     patente: string;

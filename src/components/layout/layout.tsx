@@ -21,6 +21,7 @@ export const Layout = () => {
             <li><Link to="/usuarios">Usuarios</Link></li>
             <li><Link to="/viajes">Viajes</Link></li>
             <li><Link to="/incidencias">Incidencias</Link></li>
+            <li><Link to="/ingresos">Ingresos</Link></li>
             <li><Link to="/camiones">Camiones</Link></li>
             <li><Link to="/choferes">Choferes</Link></li>
             <li><Link to="/clientes">Clientes</Link></li>
