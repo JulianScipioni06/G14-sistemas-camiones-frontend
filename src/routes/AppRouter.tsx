@@ -11,6 +11,12 @@ import { Incidencias } from '../pages/incidencias';
 import { IncidenciaDetalle } from '../pages/incidenciaDetalle';
 import { Ingresos } from '../pages/ingresos';
 import { IngresoDetalle } from '../pages/ingresosDetalle';
+import { Camiones } from '../pages/camiones';
+import { CamionDetalle } from '../pages/camionDetalle';
+import { Choferes } from '../pages/choferes';
+import { ChoferDetalle } from '../pages/choferDetalle';
+import { Clientes } from '../pages/clientes';
+import { ClienteDetalle } from '../pages/clienteDetalle';
 
 export const AppRouter = () => {
     return (
@@ -35,6 +41,15 @@ export const AppRouter = () => {
                 <Route path="ingresos" element={<Ingresos />} />
                 <Route path="ingresos/nuevo" element={<IngresoDetalle />} />
                 <Route path="ingresos/:id" element={<IngresoDetalle />} />
+                <Route path="camiones" element={<Camiones />} />
+                <Route path="camiones/nuevo" element={<CamionDetalle />} />
+                <Route path="camiones/:id" element={<CamionDetalle />} />
+                <Route path="choferes" element={<Choferes />} />
+                <Route path="choferes/nuevo" element={<ChoferDetalle />} />
+                <Route path="/choferes/:id" element={<ChoferDetalle />} />
+                <Route path="/clientes" element={<Clientes />} />
+                <Route path="/clientes/nuevo" element={<ClienteDetalle />} />
+                <Route path="/clientes/:id" element={<ClienteDetalle />} />
             </Route>
             </Route>
         </Routes>

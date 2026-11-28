@@ -1,0 +1,25 @@
+.choferes-search-box {
+  min-width: 280px;
+}
+
+.choferes-id-col {
+  width: 72px;
+  white-space: nowrap;
+}
+
+.choferes-carnet-col {
+  width: 140px;
+  white-space: nowrap;
+}
+
+.badge-danger {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.badge-warning {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}

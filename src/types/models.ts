@@ -35,13 +35,6 @@ export interface Incidencia {
     id_viaje: number;
 }
 
-export interface CamionOption {
-    id_camion: number;
-    patente: string;
-    marca: string;
-    modelo: string;
-}
-
 export interface AcopladoOption {
     id_acoplado: number;
     patente: string;
@@ -78,4 +71,35 @@ export interface PaginatedResponse<T> {
     page: number;
     limit: number;
     data: T[];
+export interface Camion {
+    id_camion: number;
+    patente: string;
+    marca: string;
+    modelo: string;
+    capacidad: number;
+    tara: number;
+    estado: string;
+    kms_recorridos: number;
+    vencimiento_vtv: string;
+    vencimiento_seguro: string;
+}  
+
+export interface Chofer {
+    id_chofer: number;
+    dni: string;
+    nombre_completo: string;
+    telefono: string;
+    domicilio: string;
+    email: string;
+    vencimiento_carnet: string;
+    id_usuario: number;
+}
+
+export interface Cliente {
+    id_cliente: number;
+    razon_social: string;
+    cuit: string;
+    direccion?: string | null;
+    telefono: string;
+    email?: string | null;
 }
